@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iniciação Científica Júnior</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+        <!--css do bootstrap-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-4.3.1/css/bootstrap.min.css">
+        <!-- Usar fontes do Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&family=Patrick+Hand+SC&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+        <!-- Arquivos js do bootstrap: jQuery, Popper.js e Bootstrap JS -->
+        <script src="bootstrap/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="bootstrap/popper.min.js" type="text/javascript"></script>
+        <script src="bootstrap/bootstrap-4.3.1/js/bootstrap.min.js" type="text/javascript"></script>  
+
+        <!-- inclusao de arquivo .css personalizado -->
+        <link href="layout/personalizado.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <!--menu -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre a Pesquisa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gloss">Glossário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ro">Resultados Obtidos</a>
+                    </li>                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pesquisadores</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#orientador">Orientador</a>
+                            <a class="dropdown-item" href="#orientanda">Orientanda</a>
+                        </div>
+                    </li>
+                </ul>                
+            </div>
+        </nav>
+
+        <!-- header -->
+        <header>
+            <div class="row">
+                <div class="col-4 fotoInicio">
+                    
+                </div>
+                <div class="col-3 fotoInicio2">
+                    
+                </div>
+                <div class="col-1">
+                    
+                </div>
+                <div class="col-4">
+                    <h1 class="site-title">Caracterização de Cintilações em Receptores GPS de Navegação – Pesquisa de Iniciação Científica Júnior</h1>
+                </div>
+            </div>
+        </header>
+        <hr id="sobre">
+        <section class="pesquisa">
+            <h2 class="titulo-sessao">Sobre a pesquisa</h2>
+            <p> A pesquisa tem apoio do INCT (Instituto Nacional de Ciência e Tecnologia) e está inserida no eixo de melhorias no 
+                desempenho de receptores GNSS sob a incidência de cintilações ionosféricas e interferências. A pesquisa deve analisar 
+                dados de monitoramento de receptores com o objetivo de se compreender melhor as circunstâncias na qual um receptor pode 
+                perder o rastreamento de um sinal GPS devido à cintilação forte. Utiliza-se o ISMR Query Tool, software científico para obtenção dos dados de monitoramento de 
+                cintilações e dados de receptores GNSS.
+            </p>
+            <p>Os resultados que foram obtidos até então permitirão a obtenção de subsídios para futuras implementações na arquitetura de
+                receptores GNSS, a fim de que os mesmos se tornem mais resistentes a possíveis incidências de cintilações. Também podemos 
+                usar os resultados para a emissão de alertas e buscar diminuir efeitos de cintilação nos receptores.</p>
+        </section>
+        <hr id="gloss">
+        <section class="glossario">
+            <h2 class="titulo-sessao">Glossário</h2>
+            <p>GNSS: sistemas de posicionamento por satélites artificiais com cobertura mundial.</p>
+            <p>Cintilações: flutuações na intensidade do sinal. Ocorrem na ionosfera terrestre e causam um sinal inconstante.</p>
+            <p>Índice S4: índice médio de desvio do sinal rastreamento.</p>
+            <p>ISMR Query Tool: software científico para obtenção dos dados de monitoramento de cintilações. Está disponível em um site 
+                mantido pela UNESP. Através deles conseguimos analisar os índices de cintilação e os dados de alta taxa de um receptor GNSS. 
+                Para acessá-lo, <a target="_blank" href="http://ismrquerytool.fct.unesp.br/is/">clique aqui.</a>
+            </p>
+            <p>Dados de alta taxa: dados brutos captados pelo satélite que possuem taxa de amostragem de 50Hz .</p>
+            <p>Índices de cintilação: são um resumo dos dados de alta taxa e possuem taxa de amostragem de 60 segundos.</p>
+        </section>
+        <hr id="ro">
+        <section class="resultados">
+            <h2 class="titulo-sessao">Resultados obtidos</h2>
+            <p>
+                Inicialmente, realizou-se uma pesquisa acerca do assunto abordado, para compreender melhor a metodologia utilizada em receptores GNSS
+                e em satélites, focando também em aprofundar conhecimentos sobre os termos descritos no glossário. A ferramenta utilizada para o download
+                dos dados de satélites foi o ISMR Query Tool, que faz monitoramento de diversos satélites da América do Sul. O foco foi na estação de 
+                monitoramento de São José dos Campos (SJCU) no ano de 2014, pelo fato de que durante o ano houve monitoramento em quase todos os dias, 
+                tendo assim uma grande quantidade de dados para análise. Algumas das ferramentas disponíveis no site do ISMR Query Tool são a visão
+                de calendário (por ano e por estação) e o plot, para fazer gráficos de nível de cintilação em determinado momento em determinada estação.
+            </p>
+            <figure class="foto-resultados">
+                <img src="img/sjcu-calendar-view.png" alt="Calendar View da Estação SJCU em 2014" class="calendar-view">
+                <figcaption>Exemplo de calendar view da estação SJCU em 2014. Nos dias mais escuros, houve mais cintilação ionosférica</figcaption>
+            </figure>
+            <figure class="foto-resultados">
+                <img src="img/plot.png" alt="Exemplo de plot feito no ISMR Query Tool" class="plot">
+                <figcaption>Exemplo de plot feito através do ISMR Query Tool</figcaption>
+            </figure>
+            <p>
+                Durante a segunda etapa, foi desenvolvido um código no RStudio para melhor analisar momentos de perda de sinal. Através dos plots
+                dos gráficos é possível ver claramente um momento de interrupção no sinal.
+            </p>
+            <figure class="foto-resultados">
+                <img src="img/plot1.png" alt="Plot 1" class="plot1">
+                <figcaption>Exemplo de plot feito com o RStudio</figcaption>
+            </figure>
+            <p>
+                Outros exemplos de gráficos desenvolvidos podem ser analisados a seguir.
+            </p>
+            <figure class="foto-resultados">
+                <img src="img/plot2.png" alt="Plot 2" class="plot2">
+                <img src="img/plot3.png" alt="Plot 3" class="plot3">
+                <figcaption>Exemplos de plots feitos com o RStudio</figcaption>
+            </figure>
+            <p>
+                Atualmente, estamos desenvolvendo um programa em Java que seja capaz de fazer o download automático dos dados dos satélites, bem como 
+                analisá-los a fim de apresentar um relatório sobre a interrupção na propagação do sinal, informando quantas foram as perdas, em que 
+                momento, qual foi a duração e a intensidade do sinal no momento em que elas ocorreram. Quando concluído, esse software poderá ser usado
+                para pesquisas na área, uma vez que inserindo os dados a serem observados, teremos facilmente um relatório completo dos mesmos.
+            </p>
+        </section>
+        <hr>
+        <section class="pesquisadores">
+            <h2 class="titulo-sessao">Pesquisadores</h2>
+            <h4 class="nome-esquerda" id="orientador">Bruno César Vani</h4>
+            <figure class="avatar">
+                <img src="img/bruno.jpg" alt="Bruno César Vani" id="bruno">
+            </figure>
+            <p>
+                Atua desde 2014 como Docente no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP/SP) - Campus Presidente Epitácio/SP,
+                na área de informática. Bacharel em Ciência da Computação (2011) pela Faculdade de Ciências e Tecnologia da Universidade Estadual Paulista
+                (FCT/UNESP), campus Presidente Prudente (2011). Mestre em Ciências Cartográficas pelo Programa de Pós-Graduação em Ciências Cartográficas
+                (PPGCC) da FCT/UNESP (2014) e doutor pelo mesmo programa (2018), tendo realizado doutorado sanduíche na University of Bath, Reino Unido. 
+                É membro do Grupo de Estudos em Geodésia Espacial (GEGE) desde 2011 e membro do Instituto Nacional de Ciência e Tecnologia "Tecnologia 
+                GNSS no Suporte à Navegação Aérea" (INCT / GNNS-NavAer), colaborando com o desenvolvimento de um sistema GBAS para o Brasil. Atua 
+                principalmente na área de Computação aplicada às Geociências, com ênfase em aplicações na Geodésia Espacial. Nesta área, destacam-se o 
+                desenvolvimento de algoritmos para avaliar o desempenho e melhorar a navegação por satélite, além da descrição e previsão de condições do 
+                Clima Espacial por meio da aplicação de Analítica Visual, Mineração de Dados e Aprendizagem de Máquina.
+            </p>
+            <br>
+            <h4 class="nome-direita" id="orientanda">Letícia Soares Machado</h4>
+            <figure class="avatar">
+                <img src="img/leticia.jpeg" alt="Letícia Soares Machado" id="leticia">
+            </figure>
+            <p>
+                Estudante do 3º ano do Curso Técnico em Informática Integrado ao Ensino Médio no Instituto Federal de Educação, Ciência e Tecnologia de 
+                São Paulo (IFSP/SP) - Campus Presidente Epitácio/SP e aos 17 anos, sempre se mostrou interessada em temas relacionados ao curso técnico 
+                e possui alto desempenho em linguagem C, Java, HTML e CSS, tendo desenvolvido em 2019 um sistema web através da linguagem HTML com uso de 
+                Bootstrap. Começou a pesquisar no eixo de melhorias para receptores GNSS desde dezembro de 2019, sendo bolsista da Iniciação Científica 
+                Júnior. No momento está desenvolvendo programas em Java que permitam uma melhor análise dos dados de alta taxa de determinado satélite, 
+                tendo como objetivo detectar perdas no sinal para futuramente analisá-las.
+            </p>
+        </section>
+        <hr>
+        <!-- rodapé -->
+        <footer class="footer">
+            <div class="container text-muted">
+                Desenvolvido por Letícia Soares Machado
+                <br>
+                Contato: <a href="mailto:leticia.machado@aluno.ifsp.edu.br">leticia.machado@aluno.ifsp.edu.br</a>
+            </div>
+        </footer>
+
+    </body>
+</html>
